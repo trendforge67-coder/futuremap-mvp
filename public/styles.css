@@ -1,0 +1,184 @@
+:root {
+  --navy: #1E1B4B;
+  --periwinkle: #6366F1;
+  --periwinkle-light: #E0E1FB;
+  --amber: #F2A93B;
+  --amber-light: #FDEFD7;
+  --ink: #1E1B2E;
+  --slate: #5B5F76;
+  --panel: #F6F6FC;
+  --bg: #FFFFFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Calibri, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+header {
+  background: var(--navy);
+  color: white;
+  padding: 28px 32px;
+}
+header h1 { margin: 0 0 4px; font-size: 28px; font-family: Cambria, Georgia, serif; }
+header p { margin: 0; color: var(--periwinkle-light); font-size: 14px; }
+
+/* Tabs */
+.tabs { display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap; }
+.tab-btn {
+  background: rgba(255,255,255,0.08); color: white; border: 1px solid rgba(255,255,255,0.25);
+  padding: 9px 16px; border-radius: 999px; font-size: 13.5px; cursor: pointer;
+}
+.tab-btn.active { background: var(--amber); color: var(--navy); border-color: var(--amber); font-weight: bold; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+main { max-width: 880px; margin: 0 auto; padding: 32px 24px 80px; }
+
+.card {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+label { display: block; font-weight: bold; margin: 14px 0 6px; font-size: 14px; }
+.hint { color: var(--slate); font-size: 12.5px; margin-top: -2px; }
+input[type="text"], input[type="number"], select {
+  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #D7D8E8; font-size: 14px;
+}
+.chip-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.chip {
+  border: 1px solid #D7D8E8; background: white; border-radius: 999px;
+  padding: 8px 14px; font-size: 13px; cursor: pointer; user-select: none;
+}
+.chip.selected { background: var(--periwinkle); color: white; border-color: var(--periwinkle); }
+
+button.primary {
+  background: var(--amber); color: var(--navy); font-weight: bold; border: none;
+  padding: 14px 24px; border-radius: 999px; font-size: 15px; cursor: pointer; margin-top: 16px;
+}
+button.primary:hover { opacity: 0.92; }
+button.ghost {
+  background: transparent; border: 1px solid var(--periwinkle); color: var(--periwinkle);
+  padding: 8px 16px; border-radius: 999px; font-size: 13px; cursor: pointer;
+}
+
+#results { display: none; }
+.path-card {
+  background: white; border: 1px solid #E6E6F2; border-radius: 12px; padding: 20px; margin-bottom: 16px;
+  box-shadow: 0 2px 10px rgba(30,27,75,0.05);
+}
+.path-card h3 { margin: 4px 0 2px; font-family: Cambria, Georgia, serif; color: var(--navy); }
+.rank-badge {
+  display: inline-block; width: 28px; height: 28px; line-height: 28px; text-align: center;
+  background: var(--amber); color: var(--navy); border-radius: 50%; font-weight: bold; margin-right: 8px;
+}
+.fit-bar-track { background: #EEEEF7; border-radius: 6px; height: 8px; margin: 8px 0; }
+.fit-bar-fill { background: var(--periwinkle); height: 8px; border-radius: 6px; }
+.tag {
+  display: inline-block; background: var(--periwinkle-light); color: var(--navy);
+  border-radius: 6px; padding: 3px 8px; font-size: 12px; margin: 2px 4px 2px 0;
+}
+.risk-tag.low { background: #DDF3E8; color: #166A45; }
+.risk-tag.mid { background: var(--amber-light); color: #8a5c10; }
+.risk-tag.high { background: #FBE0DF; color: #9c2b26; }
+.roadmap { display: flex; overflow-x: auto; gap: 0; margin-top: 14px; padding-bottom: 4px; }
+.roadmap .node { min-width: 150px; padding-right: 16px; position: relative; }
+.roadmap .node:not(:last-child)::after {
+  content: ""; position: absolute; top: 10px; right: 0; width: 16px; height: 2px; background: #D7D8E8;
+}
+.roadmap .age { font-weight: bold; font-size: 13px; color: var(--periwinkle); }
+.roadmap .milestone { font-size: 12.5px; color: var(--slate); margin-top: 4px; }
+/* Roadmap node type accents -- subject -> qualification -> course -> career -> specialisation */
+.roadmap .node-subject .age { color: #6366F1; }
+.roadmap .node-qualification .age { color: #2F8F77; }
+.roadmap .node-course .age { color: #C2790F; }
+.roadmap .node-career .age { color: #9C2B26; }
+.roadmap .node-specialisation .age { color: #1E1B4B; }
+.muted { color: var(--slate); font-size: 13.5px; }
+#loading { display: none; color: var(--slate); margin-top: 16px; }
+.what-if-box { margin-top: 24px; }
+.what-if-box textarea { display: none; }
+.life-sim-slot { margin-top: 12px; }
+.life-form { margin-top: 10px; }
+.life-form select, .life-form input[type="text"], .life-form input[type="number"] { margin-bottom: 4px; }
+.life-result { margin-top: 16px; }
+.life-result ul { padding-left: 18px; }
+
+/* Future Map graph view */
+body.futuremap-active main { max-width: 1180px; }
+.graph-intro { margin-bottom: 14px; }
+.legend { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-top: 12px; }
+.legend-item { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--slate); }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.graph-layout { display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap; }
+.graph-canvas-wrap {
+  position: relative; flex: 1 1 600px; min-width: 280px;
+  background: var(--panel); border-radius: 12px; overflow: hidden;
+  border: 1px solid #E6E6F2;
+}
+#future-map-canvas { display: block; width: 100%; touch-action: none; cursor: grab; }
+.graph-reset-btn {
+  position: absolute; top: 12px; right: 12px; background: white; border: 1px solid #D7D8E8;
+  border-radius: 999px; padding: 7px 14px; font-size: 12.5px; cursor: pointer; color: var(--navy);
+  box-shadow: 0 2px 8px rgba(30,27,75,0.08);
+}
+.graph-detail-panel {
+  flex: 0 0 320px; min-width: 260px; max-height: 640px; overflow-y: auto;
+  position: sticky; top: 16px;
+}
+.graph-detail-panel { transition: box-shadow 0.2s; }
+.graph-panel-header {
+  display: flex; align-items: center; gap: 12px;
+  padding-left: 12px; margin-bottom: 14px; border-left: 4px solid var(--periwinkle);
+}
+.panel-icon {
+  width: 38px; height: 38px; border-radius: 10px; flex: 0 0 38px;
+  display: flex; align-items: center; justify-content: center; font-size: 19px;
+}
+.panel-type { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; }
+.graph-panel-header h3 { margin: 2px 0 0; font-family: Cambria, Georgia, serif; color: var(--navy); }
+.graph-detail-panel p { font-size: 13.5px; line-height: 1.5; margin: 6px 0; }
+.panel-section-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--slate); font-weight: bold; margin: 14px 0 4px;
+}
+.panel-facts { display: flex; flex-direction: column; gap: 5px; margin-top: 6px; }
+.panel-fact {
+  display: flex; justify-content: space-between; gap: 10px; font-size: 13px;
+  background: var(--panel); border-radius: 6px; padding: 6px 10px;
+}
+.panel-fact-key { color: var(--slate); }
+.panel-fact-val { font-weight: bold; color: var(--navy); text-align: right; }
+.panel-related { line-height: 1.9; }
+.panel-related-tag { cursor: pointer; background: white; border: 1px solid #D7D8E8; }
+.panel-related-tag:hover { background: var(--periwinkle-light); }
+.panel-actions { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+.panel-action-btn {
+  background: var(--amber); color: var(--navy); font-weight: bold; border: none;
+  padding: 9px 14px; border-radius: 999px; font-size: 12.5px; cursor: pointer;
+}
+.panel-action-btn:hover { opacity: 0.92; }
+.panel-action-btn.secondary { background: transparent; border: 1px solid var(--periwinkle); color: var(--periwinkle); font-weight: normal; }
+.panel-hint { margin-top: 14px; font-size: 12px; }
+@media (max-width: 720px) {
+  .graph-detail-panel { position: static; max-height: none; }
+}
+@media (max-width: 640px) {
+  .graph-canvas-wrap { flex: 1 1 100%; }
+  #future-map-canvas { height: 70vh !important; }
+}
+
+/* AI Future Planner */
+.ai-interview-card label:first-of-type { margin-top: 4px; }
+.future-card .roadmap .node { min-width: 120px; }
+.future-card .roadmap .node .age { color: var(--navy); font-size: 12.5px; }
+#ai-show-all-btn { margin-top: 4px; }
+.ai-qa-card { margin-top: 24px; }
+.ai-qa-card input[type="text"] { margin-bottom: 10px; }
+#ai-qa-results .path-card { margin-top: 14px; }
+#ai-qa-results .path-card button { margin-top: 6px; }
+
+/* Compare table */
+.compar

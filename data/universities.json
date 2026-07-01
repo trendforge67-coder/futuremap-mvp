@@ -1,0 +1,82 @@
+[
+  {
+    "id": "uni-manchester",
+    "name": "University of Manchester",
+    "locationId": "manchester",
+    "overallRanking": 6,
+    "offerings": [
+      { "courseId": "computer-science", "ucasPoints": 152, "typicalGrades": "A*AA", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": true, "foundationYearAvailable": false, "employabilityRate": 0.91 },
+      { "courseId": "psychology", "ucasPoints": 144, "typicalGrades": "AAA", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": true, "employabilityRate": 0.84 }
+    ]
+  },
+  {
+    "id": "uni-edinburgh",
+    "name": "University of Edinburgh",
+    "locationId": "edinburgh",
+    "overallRanking": 4,
+    "offerings": [
+      { "courseId": "medicine", "ucasPoints": 176, "typicalGrades": "AAA + UCAT", "tuitionFeePerYear": 13900, "durationYears": 6, "placementYearAvailable": false, "foundationYearAvailable": false, "employabilityRate": 0.98 },
+      { "courseId": "economics", "ucasPoints": 152, "typicalGrades": "A*AA", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": false, "employabilityRate": 0.89 }
+    ]
+  },
+  {
+    "id": "uni-bristol",
+    "name": "University of Bristol",
+    "locationId": "bristol",
+    "overallRanking": 9,
+    "offerings": [
+      { "courseId": "engineering", "ucasPoints": 152, "typicalGrades": "A*AA", "tuitionFeePerYear": 9535, "durationYears": 4, "placementYearAvailable": true, "foundationYearAvailable": false, "employabilityRate": 0.92 },
+      { "courseId": "architecture", "ucasPoints": 144, "typicalGrades": "AAA", "tuitionFeePerYear": 9535, "durationYears": 5, "placementYearAvailable": false, "foundationYearAvailable": false, "employabilityRate": 0.85 }
+    ]
+  },
+  {
+    "id": "uni-leeds",
+    "name": "University of Leeds",
+    "locationId": "leeds",
+    "overallRanking": 12,
+    "offerings": [
+      { "courseId": "business", "ucasPoints": 144, "typicalGrades": "AAA", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": true, "foundationYearAvailable": true, "employabilityRate": 0.87 },
+      { "courseId": "law", "ucasPoints": 144, "typicalGrades": "AAA", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": false, "employabilityRate": 0.86 }
+    ]
+  },
+  {
+    "id": "uni-birmingham",
+    "name": "University of Birmingham",
+    "locationId": "birmingham",
+    "overallRanking": 14,
+    "offerings": [
+      { "courseId": "nursing", "ucasPoints": 120, "typicalGrades": "BBB", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": false, "employabilityRate": 0.95 },
+      { "courseId": "history", "ucasPoints": 136, "typicalGrades": "AAB", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": true, "employabilityRate": 0.8 }
+    ]
+  },
+  {
+    "id": "uni-cardiff",
+    "name": "Cardiff University",
+    "locationId": "cardiff",
+    "overallRanking": 22,
+    "offerings": [
+      { "courseId": "psychology", "ucasPoints": 136, "typicalGrades": "AAB", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": true, "employabilityRate": 0.82 },
+      { "courseId": "design", "ucasPoints": 120, "typicalGrades": "BBB + portfolio", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": true, "foundationYearAvailable": true, "employabilityRate": 0.78 }
+    ]
+  },
+  {
+    "id": "uni-london-city",
+    "name": "City, University of London",
+    "locationId": "london",
+    "overallRanking": 30,
+    "offerings": [
+      { "courseId": "computer-science", "ucasPoints": 128, "typicalGrades": "ABB", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": true, "foundationYearAvailable": true, "employabilityRate": 0.83 },
+      { "courseId": "law", "ucasPoints": 136, "typicalGrades": "AAB", "tuitionFeePerYear": 9535, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": false, "employabilityRate": 0.85 }
+    ]
+  },
+  {
+    "id": "uni-manchester-met",
+    "name": "Manchester Metropolitan University",
+    "locationId": "manchester",
+    "overallRanking": 58,
+    "offerings": [
+      { "courseId": "business", "ucasPoints": 104, "typicalGrades": "BCC", "tuitionFeePerYear": 9250, "durationYears": 3, "placementYearAvailable": true, "foundationYearAvailable": true, "employabilityRate": 0.76 },
+      { "courseId": "design", "ucasPoints": 96, "typicalGrades": "CCC + portfolio", "tuitionFeePerYear": 9250, "durationYears": 3, "placementYearAvailable": false, "foundationYearAvailable": true, "employabilityRate": 0.74 }
+    ]
+  }
+]

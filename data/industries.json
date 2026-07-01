@@ -1,0 +1,16 @@
+[
+  { "id": "tech", "name": "Technology", "description": "Software, AI, infrastructure and the products built on top of them.", "outlook": "Very high demand; fast-changing skill requirements." },
+  { "id": "business-tech", "name": "Tech-Enabled Business", "description": "Roles that sit between technology and business strategy -- product, operations, growth.", "outlook": "Strong demand; rewards people comfortable bridging technical and commercial teams." },
+  { "id": "business", "name": "Business & Management", "description": "Strategy, operations, marketing and leadership across all sectors.", "outlook": "Stable, broad demand; transferable across industries." },
+  { "id": "finance", "name": "Finance", "description": "Markets, analysis, accounting, and the management of money and risk.", "outlook": "Stable demand; increasingly intertwined with data and technology." },
+  { "id": "engineering", "name": "Engineering", "description": "Designing, building and maintaining the physical and mechanical world.", "outlook": "Steady, long-term demand; chartered status adds significant earning power." },
+  { "id": "medicine", "name": "Medicine", "description": "Diagnosing, treating and caring for patients as a doctor or specialist.", "outlook": "Persistent shortage in most specialties; long, structured training pathway." },
+  { "id": "design", "name": "Design", "description": "Visual, product and experience design across digital and physical products.", "outlook": "Competitive but stable; portfolio matters more than formal qualifications." },
+  { "id": "design-tech", "name": "Design & Technology", "description": "Design roles embedded in software and product teams.", "outlook": "Strong demand where design and engineering overlap." },
+  { "id": "education", "name": "Education", "description": "Teaching, training and supporting learning at any level.", "outlook": "Consistently high demand; routes in via degree, apprenticeship or career change." },
+  { "id": "law", "name": "Law", "description": "Legal advice, advocacy and regulation across sectors.", "outlook": "Competitive entry; stable demand once qualified." },
+  { "id": "healthcare", "name": "Healthcare", "description": "Frontline and allied health roles beyond medicine, such as nursing.", "outlook": "Persistent national shortage; very stable demand." },
+  { "id": "tech-creative", "name": "Creative Technology", "description": "Roles combining creative production with technical/interactive skills, e.g. games.", "outlook": "Growing; project-based work is common." },
+  { "id": "science", "name": "Science & Research", "description": "Laboratory, analytical and research-led roles across scientific disciplines.", "outlook": "Stable, often funding-dependent demand." },
+  { "id": "media", "name": "Media & Communication", "description": "Journalism, content and public-facing communication roles.", "outlook": "Competitive and shifting fast with digital platforms." }
+]

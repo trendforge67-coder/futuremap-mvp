@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>FutureMap AI -- Education & Career Pathway Explorer (MVP)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+  <h1>FutureMap AI</h1>
+  <p>Explore subjects, courses, universities and careers -- not just one job title.</p>
+  <nav class="tabs" id="main-tabs">
+    <button class="tab-btn" data-tab="ai-planner">AI Future Planner</button>
+    <button class="tab-btn active" data-tab="planner">Future Path Generator</button>
+    <button class="tab-btn" data-tab="futuremap">Future Map</button>
+    <button class="tab-btn" data-tab="subjects">Explore Subjects</button>
+    <button class="tab-btn" data-tab="courses">Explore Courses</button>
+    <button class="tab-btn" data-tab="compare">Compare</button>
+  </nav>
+</header>
+<main>
+
+  <section id="tab-futuremap" class="tab-panel">
+    <div class="card graph-intro">
+      <p class="hint">Every decision branches. Drag to pan, pinch or scroll to zoom, tap/click any node to expand its connections and open the detail panel. Click a node again to collapse it, or use "Highlight path from Start" in the panel to trace one route end-to-end.</p>
+      <div class="legend" id="graph-legend"></div>
+    </div>
+    <div class="graph-layout">
+      <div class="graph-canvas-wrap">
+        <canvas id="future-map-canvas"></canvas>
+        <button class="graph-reset-btn" id="graph-reset-btn" title="Reset view">Reset view</button>
+      </div>
+      <div class="card graph-detail-panel" id="graph-detail-panel">
+        <p class="muted">Click a node to see details here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tab-ai-planner" class="tab-panel">
+    <div class="card ai-interview-card">
+      <p class="hint">Answer a couple of quick questions and the AI will generate three real, connected futures on the map -- then you can ask it follow-up questions and watch the map update.</p>
+
+      <label>What subjects do you enjoy the most?</label>
+      <div class="chip-group" id="ai-subjects-group"></div>
+
+      <label>Would you rather...</label>
+      <div class="chip-group" id="ai-workstyle-group"></div>
+
+      <button class="primary" id="ai-generate-btn">Generate my three futures</button>
+      <p class="muted" id="ai-generate-hint" style="display:none;">Thinking it through against the real course/career graph...</p>
+    </div>
+
+    <div id="ai-futures-results"></div>
+
+    <div class="card ai-qa-card">
+      <label>Ask about your future</label>
+      <p class="hint">Try: "What if I don't go to university?", "Can I become a software engineer without A-Levels?", "What if I switch from Biology to Chemistry?", "Which universities are realistic for AAB?", "If I enjoy maths but dislike coding, what should I study?", or "What careers are growing fastest?"</p>
+      <input type="text" id="ai-qa-input" placeholder="Type a question about your future..." />
+      <button class="primary" id="ai-qa-btn">Ask</button>
+      <div id="ai-qa-results"></div>
+    </div>
+  </section>
+
+  <section id="tab-planner" class="tab-panel active">
+    <div class="card" id="profile-form">
+      <label>School year / age</label>
+      <input type="number" id="age" value="15" min="13" max="18" />
+      <p class="hint">Used to anchor the roadmap (e.g. GCSE choices at 14-15, A-Levels at 16).</p>
+
+      <label>Subjects you're currently taking or considering</label>
+      <div class="chip-group" id="subjects-group"></div>
+
+      <label>Interests</label>
+      <div class="chip-group" id="interests-group"></div>
+
+      <label>Skills you'd rate yourself strong in</label>
+      <div class="chip-group" id="skills-group"></div>
+
+      <label>Goals</label>
+      <div class="chip-group" id="goals-group"></div>
+
+      <button class="primary" id="generate-btn">Generate my top 5 future paths</button>
+      <p id="loading">Analysing your profile against 20 career paths...</p>
+    </div>
+
+    <div id="results"></div>
+  </section>
+
+  <section id="tab-subjects" class="tab-panel">
+    <div class="card">
+      <p class="hint">Pick a subject to see what doors it opens -- the courses it unlocks and the careers those courses lead to.</p>
+      <div class="chip-group" id="subject-explore-chips"></div>
+    </div>
+    <div id="subject-explore-results"></div>
+  </section>
+
+  <section id="tab-courses" class="tab-panel">
+    <div class="card">
+      <p class="hint">Browse degree courses directly -- see what you'd learn, required subjects, careers, and which universities offer it.</p>
+      <div class="chip-group" id="course-explore-chips"></div>
+    </div>
+    <div id="course-explore-results"></div>
+  </section>
+
+  <section id="tab-compare" class="tab-panel">
+    <div class="card">
+      <label>Compare type</label>
+      <select id="compare-type">
+        <option value="course">Courses</option>
+        <option value="career">Careers</option>
+        <option value="university">Universities</option>
+      </select>
+      <label>Pick two or more to compare</label>
+      <div class="chip-group" id="compare-chips"></div>
+      <button class="primary" id="compare-btn">Compare</button>
+    </div>
+    <div id="compare-results"></div>
+  </section>
+
+</main>
+<script src="/graph.js"></script>
+<script src="/app.js"></script>
+<script src="/planner.js"></script>
+</body>
+</html>

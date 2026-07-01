@@ -1,0 +1,66 @@
+[
+  {
+    "id": "london",
+    "label": "London",
+    "costOfLivingIndex": 1.45,
+    "avgHousePrice": 540000,
+    "remoteFriendly": true,
+    "note": "Highest salaries available but cost of living and housing eat most of the premium."
+  },
+  {
+    "id": "manchester",
+    "label": "Manchester",
+    "costOfLivingIndex": 0.95,
+    "avgHousePrice": 245000,
+    "remoteFriendly": true,
+    "note": "Strong tech/media scene, much lower housing cost than London."
+  },
+  {
+    "id": "birmingham",
+    "label": "Birmingham",
+    "costOfLivingIndex": 0.92,
+    "avgHousePrice": 230000,
+    "remoteFriendly": true,
+    "note": "Large, diverse job market across finance, engineering, public sector."
+  },
+  {
+    "id": "edinburgh",
+    "label": "Edinburgh",
+    "costOfLivingIndex": 1.05,
+    "avgHousePrice": 300000,
+    "remoteFriendly": true,
+    "note": "Strong finance/insurance and life sciences sector."
+  },
+  {
+    "id": "bristol",
+    "label": "Bristol",
+    "costOfLivingIndex": 1.08,
+    "avgHousePrice": 340000,
+    "remoteFriendly": true,
+    "note": "Aerospace/engineering and creative industries hub."
+  },
+  {
+    "id": "leeds",
+    "label": "Leeds",
+    "costOfLivingIndex": 0.93,
+    "avgHousePrice": 230000,
+    "remoteFriendly": true,
+    "note": "Growing finance and digital sector, lower cost of living."
+  },
+  {
+    "id": "cardiff",
+    "label": "Cardiff",
+    "costOfLivingIndex": 0.9,
+    "avgHousePrice": 245000,
+    "remoteFriendly": true,
+    "note": "Lower cost of living, public sector and media presence."
+  },
+  {
+    "id": "remote-rural",
+    "label": "Remote / smaller town",
+    "costOfLivingIndex": 0.78,
+    "avgHousePrice": 210000,
+    "remoteFriendly": true,
+    "note": "Lowest cost of living; depends on remote-friendly career and broadband."
+  }
+]

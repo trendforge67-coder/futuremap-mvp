@@ -1,0 +1,16 @@
+[
+  { "id": "maths", "name": "Maths", "levels": ["gcse", "a-level", "ib"], "category": "stem", "relatedSkills": ["maths", "logic", "problem-solving"], "unlocksCourseIds": ["computer-science", "economics", "engineering", "architecture"] },
+  { "id": "further-maths", "name": "Further Maths", "levels": ["a-level", "ib"], "category": "stem", "relatedSkills": ["maths", "logic"], "unlocksCourseIds": ["computer-science", "engineering", "economics"] },
+  { "id": "computer-science", "name": "Computer Science", "levels": ["gcse", "a-level", "btec", "t-level"], "category": "stem", "relatedSkills": ["programming", "logic", "problem-solving"], "unlocksCourseIds": ["computer-science", "design"] },
+  { "id": "physics", "name": "Physics", "levels": ["gcse", "a-level", "ib"], "category": "stem", "relatedSkills": ["maths", "problem-solving", "logic"], "unlocksCourseIds": ["engineering", "computer-science", "architecture"] },
+  { "id": "chemistry", "name": "Chemistry", "levels": ["gcse", "a-level", "ib"], "category": "science", "relatedSkills": ["problem-solving", "resilience"], "unlocksCourseIds": ["medicine", "nursing"] },
+  { "id": "biology", "name": "Biology", "levels": ["gcse", "a-level", "ib"], "category": "science", "relatedSkills": ["problem-solving", "resilience", "communication"], "unlocksCourseIds": ["medicine", "nursing", "psychology"] },
+  { "id": "english", "name": "English", "levels": ["gcse", "a-level", "ib"], "category": "humanities", "relatedSkills": ["communication", "creativity"], "unlocksCourseIds": ["law", "history", "business", "nursing"] },
+  { "id": "history", "name": "History", "levels": ["gcse", "a-level", "ib"], "category": "humanities", "relatedSkills": ["communication", "logic"], "unlocksCourseIds": ["law", "history"] },
+  { "id": "business", "name": "Business", "levels": ["gcse", "a-level", "btec"], "category": "social-science", "relatedSkills": ["communication", "leadership"], "unlocksCourseIds": ["business", "economics"] },
+  { "id": "economics", "name": "Economics", "levels": ["a-level", "ib"], "category": "social-science", "relatedSkills": ["maths", "logic"], "unlocksCourseIds": ["economics", "business"] },
+  { "id": "art", "name": "Art & Design", "levels": ["gcse", "a-level", "btec"], "category": "creative", "relatedSkills": ["creativity"], "unlocksCourseIds": ["design", "architecture"] },
+  { "id": "design-technology", "name": "Design Technology", "levels": ["gcse", "a-level", "btec", "t-level"], "category": "creative", "relatedSkills": ["creativity", "problem-solving"], "unlocksCourseIds": ["design", "engineering", "architecture"] },
+  { "id": "psychology", "name": "Psychology", "levels": ["a-level", "ib"], "category": "social-science", "relatedSkills": ["communication", "problem-solving"], "unlocksCourseIds": ["psychology"] },
+  { "id": "media-studies", "name": "Media Studies", "levels": ["gcse", "a-level"], "category": "creative", "relatedSkills": ["communication", "creativity"], "unlocksCourseIds": ["design", "history"] }
+]

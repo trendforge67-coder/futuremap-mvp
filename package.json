@@ -1,0 +1,13 @@
+{
+  "name": "futuremap-ai-mvp",
+  "version": "0.2.0",
+  "description": "FutureMap AI -- Education & Career Pathway Explorer. Zero npm dependencies.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
